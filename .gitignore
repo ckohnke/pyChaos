@@ -50,6 +50,7 @@ coverage.xml
 # Django stuff:
 *.log
 pyChaos/settings_secret.py
+*.sqlite3
 
 # Sphinx documentation
 docs/_build/

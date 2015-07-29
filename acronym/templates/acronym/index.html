@@ -1,0 +1,9 @@
+{% if latest_acronym_list %}
+    <ul>
+    {% for acronym in latest_acronym_list %}
+      <li><a href="{% url 'acronym:detail' acronym.id %}">{{ acronym.short_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No acronyms are available.</p>
+{% endif %}
