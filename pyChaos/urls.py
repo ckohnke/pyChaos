@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^chaos/', include('acronym.urls', namespac="acronyms")),
+    url(r'^chaos/', include('acronym.urls', namespace="acronym")),
     url(r'^admin/', include(admin.site.urls)),
 ]
